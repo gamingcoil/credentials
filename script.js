@@ -37,5 +37,5 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function navigateToNewPage(itemId) {
-  window.location.href = `/service/${itemId}`; // Use template literals to construct the URL with the item ID
+  window.location.href = `/service?id=${itemId}`; // Use template literals to construct the URL with the item ID
 }

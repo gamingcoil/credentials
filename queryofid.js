@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const itemId = window.location.pathname.split('/').pop(); // Extract the item ID from the URL path
+    const urlParams = new URLSearchParams(window.location.search);
+    const itemId = urlParams.get('id');
   
     fetch(`https://credentials-server.onrender.com/items/${itemId}`)
       .then(response => response.json())
