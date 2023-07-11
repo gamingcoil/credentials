@@ -57,13 +57,10 @@ body {
 }
 
 /* Style for item details */
-.item-box {
+.item-box .item-details{
   flex: 1;
 }
 
-.item-details {
-  margin-top: 100px;
-}
 
 .item-box h2 {
   font-size: 16px;
