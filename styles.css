@@ -57,7 +57,11 @@ body {
 }
 
 /* Style for item details */
-.item-box .item-details {
+.item-box {
+  flex: 1;
+}
+
+.item-details {
   flex: 1;
 }
 
