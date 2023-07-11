@@ -62,7 +62,7 @@ body {
 }
 
 .item-details {
-  flex: 1;
+  margin-top: 100px;
 }
 
 .item-box h2 {
