@@ -5,13 +5,11 @@ document.addEventListener("DOMContentLoaded", function() {
   fetch(`https://credentials-server.onrender.com/items/${itemId}`)
     .then(response => response.json())
     .then(item => {
-      const itemListElement = document.getElementById('item-list');
-      const itemElement = document.createElement('div');
-      itemElement.classList.add('service-content');
+      const serviceContent = document.getElementById('service-content');
 
       const imageElement = document.createElement('img');
       imageElement.src = item.imageLink;
-      itemElement.appendChild(imageElement);
+      serviceContent.appendChild(imageElement);
 
       const itemDetailsElement = document.createElement('div');
       itemDetailsElement.classList.add('item-details');
@@ -24,9 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
       descriptionElement.textContent = item.description;
       itemDetailsElement.appendChild(descriptionElement);
 
-      itemElement.appendChild(itemDetailsElement);
+      serviceContent.appendChild(itemDetailsElement);
 
-      itemListElement.appendChild(itemElement);
     })
     .catch(error => {
       console.error('Failed to fetch item:', error);
