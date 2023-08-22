@@ -21,9 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
       const descriptionElement = document.createElement('p');
       descriptionElement.textContent = item.description;
       const urlBtn = document.createElement('button');
-      urlBtn.type = "submit";
       urlBtn.textContent = 'To Website'
-      urlBtn.formAction = item.websiteUrl;
+      urlBtn.onclick = `window.location.href=${item.websiteUrl};`;
       descriptionElement.appendChild(urlBtn)
       itemDetailsElement.appendChild(descriptionElement);
 
