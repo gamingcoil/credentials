@@ -93,12 +93,13 @@ body {
 
 .service-content h2 {
   font-size: 70px;
-  margin-top: 45px;
-  margin-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 0px;
 }
 
 .service-content p {
   margin: 0;
+  margin-bottom: 10px;
 }
 
 /* Additional style for the new content */

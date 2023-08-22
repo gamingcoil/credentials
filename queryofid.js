@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const urlBtn = document.createElement('button');
       urlBtn.textContent = 'To Website'
       urlBtn.setAttribute('onclick', `window.location.href='${item.websiteUrl}';`);
-      descriptionElement.appendChild(urlBtn)
+      itemDetailsElement.appendChild(urlBtn)
       itemDetailsElement.appendChild(descriptionElement);
 
       serviceContent.appendChild(itemDetailsElement);
