@@ -56,20 +56,6 @@ body {
   border-radius: 4px;
 }
 
-.service-content {
-  border-radius: 6px;
-  display: flex;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-.service-content img {
-  width: 60px;
-  height: 60px;
-  margin-right: 10px;
-  border-radius: 4px;
-}
-
 /* Style for item details */
 .item-box .item-details{
   flex: 1;
@@ -85,7 +71,33 @@ body {
   margin: 0;
 }
 
+.service-content {
+  border-radius: 6px;
+  display: flex;
+  padding: 10px;
+  margin-bottom: 20px;
+}
 
+.service-content img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.service-content .item-details{
+  flex: 1;
+}
+
+.service-content h2 {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.service-content p {
+  margin: 0;
+}
 
 /* Additional style for the new content */
 .new-content {
