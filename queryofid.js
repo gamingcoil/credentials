@@ -5,9 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   fetch(`https://credentials-server.onrender.com/items/${itemId}`)
     .then(response => response.json())
     .then(item => {
-      const itemListElement = document.getElementById('item-list');
-      const itemElement = document.createElement('div');
-      itemElement.classList.add('item-box');
+      
 
       const imageElement = document.createElement('img');
       imageElement.src = item.imageLink;
@@ -24,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
       descriptionElement.textContent = item.description;
       itemDetailsElement.appendChild(descriptionElement);
 
-      itemElement.appendChild(itemDetailsElement);
+      
 
       itemListElement.appendChild(itemElement);
     })
