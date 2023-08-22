@@ -56,11 +56,24 @@ body {
   border-radius: 4px;
 }
 
+.service-content {
+  border-radius: 6px;
+  display: flex;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.service-content img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
 /* Style for item details */
 .item-box .item-details{
   flex: 1;
 }
-
 
 .item-box h2 {
   font-size: 16px;
