@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(item => {
       const itemListElement = document.getElementById('item-list');
       const itemElement = document.createElement('div');
-      
+      itemElement.classList.add('service-content');
 
       const imageElement = document.createElement('img');
       imageElement.src = item.imageLink;
